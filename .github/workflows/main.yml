@@ -1,5 +1,9 @@
 name: main-workflow
-on: [push]
+on:
+  push:
+    branches:
+      - master
+      - development
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
